@@ -1,0 +1,104 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+@font-face {
+    font-family: 'Tiny5', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+}
+:root {
+    --amareloOcre: #f2c438;
+    --verdeEscuro: #2f642f;
+    --marrom: #8b4513;
+    --verdeClaro: #6aac6a;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.card-container {
+    perspective: 1000px;
+}
+
+.card {
+    width: 650px;
+    height: 750px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+#divContadorFrente, #divContadorTras {
+    font-family: 'Tiny5';
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+    background-color: var(--amareloOcre);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 1px 2px 7px black;
+    padding-top: 10px;
+}
+
+#divContadorTras {
+    transform: rotateY(180deg);
+}
+
+.card.flip #divContadorFrente {
+    transform: rotateY(180deg);
+}
+
+.card.flip #divContadorTras {
+    transform: rotateY(0deg);
+}
+
+p {
+    font-size: 200px;
+}
+
+.textoAcidente {
+    font-family: 'Tiny5';
+    font-size: 40px;
+}
+
+button {
+    font-family: 'Tiny5';
+    width: 100px;
+    height: 50px;
+    background-color: white;
+}
+
+button:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+#addDia {
+    background-color: var(--verdeClaro);
+}
+#addDia:hover {
+    background-color: var(--verdeEscuro);
+}
+
+#rmvDia{
+    background-color: rgb(172, 86, 86);
+}
+
+#rmvDia:hover{
+    background-color: rgb(110, 23, 23);
+}
+/* Aqui começa o verso do cartão */
+li {
+    text-align: left;
+    list-style: square;
+}

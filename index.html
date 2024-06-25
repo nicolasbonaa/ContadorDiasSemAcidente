@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contador de Dias</title>
+</head>
+<body>
+    <div id="cartoes" class="card-container">
+        <div class="card">
+            <div id="divContadorFrente" class="card-front">
+                <h1 class="textoAcidente">CONTADOR DE DIAS SEM ACIDENTE</h1>
+                <p id="contador">0</p>
+                <p class="textoAcidente">AQUI FOI ESCRITO O ULTIMO ACIDENTE</p>
+                <button class="viraCartao" id="viraCartao">VER ÚLTIMOS ACIDENTES</button>
+                <button id="addDia">ADICIONAR UM DIA</button>
+                <button id="rmvDia">REMOVER UM DIA</button>
+                <button id="zrDia">ZERAR OS DIAS</button>
+            </div>
+            <div id="divContadorTras" class="card-back">
+                <p class="textoAcidente">Motivos dos Últimos Acidentes:</p>
+                <ul>
+                    <li>A internet caiu. Isto ocorreu dia 22/02/2024</li>
+                </ul>
+                <button class="viraCartao">VOLTAR AO CONTADOR</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
