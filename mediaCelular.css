@@ -1,0 +1,20 @@
+@charset 'UTF-8';
+@media screen and (max-width: 360px){
+
+    .card{
+        width: 340px;
+        height: 350px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .textoAcidente {
+        font-size: 15px;
+    }
+    p {
+        font-size: 100px;
+    }
+
+    li {
+        font-size: 10px;
+    }
+}
