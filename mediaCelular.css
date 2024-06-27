@@ -2,27 +2,30 @@
 @media screen and (max-width: 828px){
 
     .card{
-        width: 350px;
-        height: 400px;
+        width: 370px;
+        height: 500px;
         margin: auto;
-        margin-top: 10px;
-    }
-    #divContadorFrente, #divContadorTras{
-        background-color: aquamarine;
     }
     .textoAcidente {
-        font-size: 10px;
+        font-size: 20px;
     }
     button {
         color: black;
-        width: 75px;
+        width: 150px;
         height: 50px;
     }
-    p {
-        font-size: 100px;
+    #contador {
+        font-size: 200px;
+        padding-top: 50px;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
-    li {
+    p {
+        padding-top: 40px;
+    }
+
+    h2 {
         font-size: 10px;
     }
 }
