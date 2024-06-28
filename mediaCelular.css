@@ -15,7 +15,7 @@
         line-height: 20px;
     }
     .aData {
-        margin-top: -50px;
+        margin-top: -40px;
         font-size: 15px;
     }
     button {
@@ -38,6 +38,15 @@
     }
     #botoes button {
         flex: 1 1 30%
+    }
+    #addDia {
+        order: 2;
+    }
+    #rmvDia {
+        order: 2;
+    }
+    #viraCartao {
+        order: 3;
     }
     p {
         padding-top: 20px;

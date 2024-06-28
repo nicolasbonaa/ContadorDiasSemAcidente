@@ -83,15 +83,16 @@ p {
 }
 
 #botoes {
-    margin-top: 100px;
+    margin-top: 40px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 button {
+    font-size: 20px;
     margin: auto;
     font-family: 'Tiny5';
-    width: 240px;
+    width: 440px;
     height: 50px;
     background-color: white;   
 }
