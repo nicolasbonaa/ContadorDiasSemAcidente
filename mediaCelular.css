@@ -21,6 +21,15 @@
         margin-top: 10px;
         margin-bottom: 20px;
     }
+    #botoes {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    #botoes button {
+        flex: 1 1 30%
+    }
     p {
         padding-top: 40px;
     }
