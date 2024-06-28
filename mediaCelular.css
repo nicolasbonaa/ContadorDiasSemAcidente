@@ -8,6 +8,15 @@
     }
     .textoAcidente {
         font-size: 20px;
+        margin-bottom: 10px;
+    }
+    #tfBaixo{
+        padding-top: 40px;
+        line-height: 20px;
+    }
+    .aData {
+        margin-top: -50px;
+        font-size: 15px;
     }
     button {
         color: black;
@@ -25,13 +34,13 @@
         display: flex;
         gap: 20px;
         flex-wrap: wrap;
-        padding: 10px;
+        padding: 20px;
     }
     #botoes button {
         flex: 1 1 30%
     }
     p {
-        padding-top: 40px;
+        padding-top: 20px;
     }
 
     h2 {
