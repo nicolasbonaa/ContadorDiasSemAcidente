@@ -87,11 +87,11 @@ p {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
-    padding: 10px;
 }
 button {
+    margin: auto;
     font-family: 'Tiny5';
-    width: 140px;
+    width: 240px;
     height: 50px;
     background-color: white;   
 }
