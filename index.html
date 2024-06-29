@@ -15,8 +15,8 @@
                 <h1 class="textoAcidente" id="tfTopo">CONTADOR DE DIAS SEM ACIDENTE</h1>
                 <p id="contador">0</p>
                 <div id="ctud">
-                    <label for="data" onclick="motivo()"><p class="textoAcidente" id="tfBaixo">Qual o Acidente?</p></label>
-                    <p class="aData">12/02/2023</p>
+                    <label for="data" onclick="motivo()" onload="salvaString()"><p class="textoAcidente" id="tfBaixo">Qual o Acidente?</p></label>
+                    <p class="aData" id="aData"></p>
                     <div id="botoes">
                         <button class="viraCartao" id="viraCartao">VER ÚLTIMOS ACIDENTES</button>
                         <button id="addDia">ADICIONAR UM DIA</button>
@@ -32,5 +32,6 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <script src="texto_ata.js"></script>
 </body>
 </html>
