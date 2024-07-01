@@ -1,5 +1,5 @@
 let motivoRElement; 
-
+window.prompt('TESTE')
 function motivo() {
     const pAtual = document.getElementById("tfBaixo");
     //Variaveis de DATA
@@ -32,6 +32,14 @@ function motivo() {
         localStorage.setItem('contador', numeroF);
         localStorage.setItem('savedString', motivoF);
         localStorage.setItem('data', datasFormatadas.join(' '))
+    
+    let h2 = document.createElement("h2")
+    let h2Conteudo = document.createElement(motivoF)
+    h2.appendChild(h2Conteudo)
+    let ch2 = document.getElementById("textoVerso")
+    let divPai = ch2.parentNode;
+    divPai.insertBefore(h2, ch2)
+        
 }
 function carregaDadosLocalStorage() {
     var savedString = localStorage.getItem('savedString');
