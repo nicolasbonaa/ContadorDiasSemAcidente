@@ -11,6 +11,7 @@ function motivo() {
     //Variaveis do prompt
     let motivoAnterior = pAtual ? pAtual.textContent : '';
     let motivoF = window.prompt('Me dia qual foi o motivo do acidente');
+    let motivoV = [motivoF, datasFormatadas.join[' ']]
 
     if (pAtual) {
         pAtual.textContent = motivoF.toUpperCase();
@@ -33,12 +34,13 @@ function motivo() {
         localStorage.setItem('savedString', motivoF);
         localStorage.setItem('data', datasFormatadas.join(' '))
     
-    let h2 = document.createElement("h2")
-    let h2Conteudo = document.createElement(motivoF)
-    h2.appendChild(h2Conteudo)
-    let ch2 = document.getElementById("textoVerso")
-    let divPai = ch2.parentNode;
-    divPai.insertBefore(h2, ch2)
+        let h2 = document.createElement("h2");
+        let h2Conteudo = document.createTextNode(motivoV.join(' ')); // Cria um nó de texto
+        h2.appendChild(h2Conteudo);
+        let ch2 = document.getElementById("textoVerso");
+        let divPai = ch2.parentNode;
+        divPai.insertBefore(h2, ch2);
+        
         
 }
 function carregaDadosLocalStorage() {
