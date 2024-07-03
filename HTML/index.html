@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/mediaCelular.css">
+    <link rel="stylesheet" href="/CSS/media.css">
+    <title>Contador de Dias</title>
+</head>
+<body>
+    <div id="cartoes" class="card-container">
+        <div class="card">
+            <div id="divContadorFrente" class="card-front">
+                <h1 class="textoAcidente" id="tfTopo">CONTADOR DE DIAS SEM ACIDENTE</h1>
+                <p id="contador">0</p>
+                <div id="ctud">
+                    <label for="data" onclick="motivo()" onload="salvaString()"><p class="textoAcidente" id="tfBaixo">Qual o Acidente?</p></label>
+                    <p class="aData" id="aData"></p> 
+                    <div id="botoes">
+                        <button class="viraCartao" id="viraCartao">VER ÚLTIMOS ACIDENTES</button>
+                        <button id="addDia">ADICIONAR UM DIA</button>
+                        <button id="rmvDia">REMOVER UM DIA</button>
+                    </div>
+                </div>
+            </div>
+            <div id="divContadorTras" class="card-back">
+                <p class="textoAcidente" id="tituloUltimos">MOTIVOS DOS ÚLTIMOS ACIDENTES:</p>
+                    <h2 id="motivoV">A INTERNET CAIU. ISTO OCORREU 22/02/2024</h2>
+                <button class="viraCartao">VOLTAR AO CONTADOR</button>
+            </div>
+        </div>
+    </div>
+    <script src="/SCRIPTS/script.js"></script>
+    <script src="/SCRIPTS/texto_ata.js"></script>
+</body>
+</html>
